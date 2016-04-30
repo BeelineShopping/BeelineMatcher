@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe BeelineMatcher do
 	before(:each) do
-		@matcher = BeelineMatcher::Matcher.new("http://food2fork.com/view/35120")
+		@matcher = BeelineMatcher::Ingredients.new("http://food2fork.com/view/35120")
 	end
   it 'has a version number' do
     expect(BeelineMatcher::VERSION).not_to be nil
