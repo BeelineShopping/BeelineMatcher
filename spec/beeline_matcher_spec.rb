@@ -4,6 +4,7 @@ describe BeelineMatcher do
 	before(:each) do
 		@ingredients = BeelineMatcher::Ingredients.new("http://food2fork.com/view/35120")
     @model = BeelineMatcher::Model.new("bin/model_file")
+    @parser = BeelineMatcher::Parser.new("http://food2fork.com/view/35120")
 	end
   it 'has a version number' do
     expect(BeelineMatcher::VERSION).not_to be nil
@@ -25,8 +26,15 @@ describe BeelineMatcher do
     expect(@model.file).not_to be nil
   end
 
-  it 'recognizes crf_version' do
-    puts BeelineMatcher::CRF_VERSIONs
-    expect(BeelineMatcher::CRF_VERSION).not_to be nil
+  it 'should generate a filename' do
+    expect(@ingredients.filename).not_to be nil
+  end
+
+  it 'should save raw ingredients to file' do
+    expect(@ingredients.save).to be @ingredients.filename
+  end
+
+  it 'parsher should save ingredients to file' do
+    expect(@parser.save_ingredients_to_file).to be @parser.ingredients.filename
   end
 end
