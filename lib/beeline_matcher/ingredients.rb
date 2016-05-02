@@ -1,6 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
-require 'SecureRandom'
+require 'securerandom'
 module BeelineMatcher
 	class Ingredients
 		attr_reader :filename
