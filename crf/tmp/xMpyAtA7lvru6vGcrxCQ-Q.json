@@ -1,0 +1,48 @@
+[
+    {
+        "comment": "small pounded thin", 
+        "name": "chicken breasts", 
+        "qty": "4", 
+        "other": ",", 
+        "input": "4 small chicken breasts, pounded thin", 
+        "display": "<span class='qty'>4</span><span class='comment'>small</span><span class='name'>chicken breasts</span><span class='other'>,</span><span class='comment'>pounded thin</span>"
+    }, 
+    {
+        "comment": "to taste", 
+        "input": "salt and pepper to taste", 
+        "name": "salt and pepper", 
+        "display": "<span class='name'>salt and pepper</span><span class='comment'>to taste</span>"
+    }, 
+    {
+        "comment": "diced", 
+        "name": "jalapenos", 
+        "qty": "4", 
+        "other": ",", 
+        "input": "4 jalapenos, diced", 
+        "display": "<span class='qty'>4</span><span class='name'>jalapenos</span><span class='other'>,</span><span class='comment'>diced</span>"
+    }, 
+    {
+        "comment": ", room temperature", 
+        "name": "cream cheese", 
+        "qty": "4", 
+        "input": "4 ounces cream cheese, room temperature", 
+        "display": "<span class='qty'>4</span><span class='unit'>ounces</span><span class='name'>cream cheese</span><span class='comment'>, room temperature</span>", 
+        "unit": "ounce"
+    }, 
+    {
+        "comment": "shredded", 
+        "name": "cheddar cheese", 
+        "qty": "1", 
+        "other": ",", 
+        "input": "1 cup cheddar cheese, shredded", 
+        "display": "<span class='qty'>1</span><span class='unit'>cup</span><span class='name'>cheddar cheese</span><span class='other'>,</span><span class='comment'>shredded</span>", 
+        "unit": "cup"
+    }, 
+    {
+        "input": "8 slices bacon", 
+        "display": "<span class='qty'>8</span><span class='unit'>slices</span><span class='name'>bacon</span>", 
+        "name": "bacon", 
+        "unit": "slice", 
+        "qty": "8"
+    }
+]

@@ -9,7 +9,7 @@ module BeelineMatcher
 			parser.convert_to_json
 
 			# read in json file
-			f = File.read(parser.json_filename)
+			f = File.read("crf/tmp/#{parser.json_filename}")
 			hash = JSON.parse(f)
 			f.close
 
