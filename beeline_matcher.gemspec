@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
   spec.email         = ["bheller2010@live.com"]
 
   spec.summary       = %q{Tools to match parsed JSON files with ingredients to items in Beeline's DB}
-  spec.description   = %q{Uses the NYTimes' CRF toolset to parse an ingredient list into a JSON structure that we can then map to Beeline's DB}
+  spec.description   = %q{Uses the NYTimes' CRF toolset to parse an ingredient list into a JSON structure that we can then map to Beeline's DB.  Requires Python and libcrf++}
   spec.homepage      = "https://github.com/Vilyan01/BeelineMatcher"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
